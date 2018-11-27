@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewThingInfoActivity"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/nameLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"/>
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/delete"
+            android:layout_toRightOf="@+id/edit_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_below="@+id/nameLabelTextView"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/nameLabelTextView"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/showImageView"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:onClick="showSavedImage"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/descriptionLabelTextView"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/nameLayout"
+        />
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:maxLines="100"
+        android:gravity="top"
+        android:textColor="@color/colorPrimaryDark"
+        android:scrollbars="vertical"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@id/descriptionLabelTextView"/>
+
+    <TextView
+        android:id="@+id/addedOnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Added on: "
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSoftBlue"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/addedOnTextView"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

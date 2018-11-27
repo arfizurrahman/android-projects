@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#454444</color>
+    <!--<color name="colorPrimary2">#3F51B5</color>-->
+    <color name="colorPrimaryDark">#353434</color>
+    <!--<color name="colorPrimaryDark2">#303F9F</color>-->
+    <color name="colorAccent">#787576</color>
+    <color name="colorAccent2">#979596</color>
+    <color name="colorShadedBlack">#434343</color>
+    <color name="colorShadedBlack2">#514c4c</color>
+    <color name="colorYellow">#edc752</color>
+    <color name="colorYellow2">#FFC000</color>
+    <color name="colorGreen3">#689538</color>
+    <color name="colorFadedWhite">#f1f0ef</color>
+    <color name="colorFadedWhite2">#bababa</color>
+    <color name="colorFadedWhite3">#aba9a9</color>
+    <color name="colorMaroon">#c94c54</color>
+    <color name="colorMaroonDeep">#9b343b</color>
+    <color name="colorNavyBlue">#5c639f</color>
+    <color name="colorNavyBlue2">#535a91</color>
+    <color name="colorDarkBlue">#36395b</color>
+    <color name="colorSoftBlue">#3EBEC9</color>
+    <color name="colorSoftBlue2">#39a5c9</color>
+    <color name="colorSoftBlue3">#009688</color>
+    <color name="colorBlack">#000000</color>
+
+
+    <color name="colorSoftGreen">#4f995a</color>
+    <color name="colorSoftGreen2">#62ca6b</color>
+    <color name="colorOrange1">#E47501</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorPurple">#a679c7</color>
+</resources>

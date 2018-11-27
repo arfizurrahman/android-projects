@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThingsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/noThingsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/noThingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="No things available"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/buttonClickTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Click on the add button"
+            android:textColor="@color/colorFadedWhite2"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/noThingsLayout"
+        android:id="@+id/filterBoxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/filterEditText"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:hint="Filter by name/title, category"
+            android:maxLines="1"
+            android:background="@drawable/edittextbackground"/>
+        <ImageView
+            android:id="@+id/cancelFilterIcon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_height="25dp"
+            android:src="@drawable/cancel_icon"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_below="@+id/filterBoxLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview_things"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_marginBottom = "16dp"
+        android:layout_marginRight = "16dp"
+        android:clickable = "true"
+        android:onClick="AddThingFab"
+        android:src="@drawable/add_thing_fab_icon"
+        android:tint="#ffffff"
+        app:backgroundTint="@color/colorSoftBlue"
+        app:borderWidth="0dp"
+        app:elevation="5dp"/>
+
+</RelativeLayout>
